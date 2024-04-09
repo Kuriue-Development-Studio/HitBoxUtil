@@ -11,15 +11,17 @@ public class PolygonDetectorBuilder {
     private ArrayList<Vector> points = new ArrayList<>();
     private int tick = 10;
 
-    public void addPoint(double x, double y, double z) {
+    public PolygonDetectorBuilder addPoint(double x, double y, double z) {
         points.add(new Vector(x, y, z));
+        return this;
     }
 
-    public void addPoint(Vector v) {
+    public PolygonDetectorBuilder addPoint(Vector v) {
         points.add(v);
+        return this;
     }
 
-    public PolygonCollisionDetector create() {
+    public PolygonCollisionDetector build() {
         int trianglesize = points.size()-2;
         if(trianglesize>0) {
             Triangle[] triangles = new Triangle[trianglesize];

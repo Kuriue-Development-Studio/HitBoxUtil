@@ -6,6 +6,6 @@ public abstract class CollisionDetector {
 
     public abstract boolean isCollision(Entity en);
 
-    public abstract boolean isCollision(PolygonCollisionDetector collisionDetector);
+    public abstract boolean isCollisionPolygon(PolygonCollisionDetector collisionDetector);
 
 }

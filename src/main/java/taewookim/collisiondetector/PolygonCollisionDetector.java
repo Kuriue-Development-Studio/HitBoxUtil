@@ -22,7 +22,7 @@ public class PolygonCollisionDetector extends CollisionDetector {
     }
 
     @Override
-    public boolean isCollision(PolygonCollisionDetector collisionDetector) {
+    public boolean isCollisionPolygon(PolygonCollisionDetector collisionDetector) {
         for(Triangle triangle : triangles) {
             for(Triangle triangle1 : collisionDetector.triangles) {
                 if(triangle.isCollision(triangle1)) {

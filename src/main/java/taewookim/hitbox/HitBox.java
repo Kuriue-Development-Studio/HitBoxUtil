@@ -64,7 +64,7 @@ public abstract class HitBox {
         ArrayList<Entity> inhitboxs = new ArrayList<>();
         for(Chunk chunk : getRoundChunks()) {
             for(Entity en : chunk.getEntities()) {
-                if(!en.equals(owner)) {
+                if(owner!=null&&!en.equals(owner)) {
                     for(CollisionDetector detector : collisiondetectors) {
                         if(detector.isCollision(en)) {
                             inhitboxs.add(en);
@@ -90,7 +90,7 @@ public abstract class HitBox {
     public boolean isHit(HitBox hitBox) {
         for(PolygonCollisionDetector cd : collisiondetectors) {
             for(PolygonCollisionDetector cd1 : hitBox.collisiondetectors) {
-                if(cd.isCollision(cd1)) {
+                if(cd.isCollisionPolygon(cd1)) {
                     return true;
                 }
             }
