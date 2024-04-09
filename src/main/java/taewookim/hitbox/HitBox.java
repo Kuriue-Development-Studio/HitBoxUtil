@@ -45,7 +45,7 @@ public abstract class HitBox {
         return chunks.toArray(Chunk[]::new);
     }
 
-    public void update() {
+    public void entityCollisionDetect() {
         ArrayList<Entity> inhitboxs = new ArrayList<>();
         for(Chunk chunk : getRoundChunks()) {
             for(Entity en : chunk.getEntities()) {
@@ -68,6 +68,14 @@ public abstract class HitBox {
             quitHitBox(en);
             this.inhitboxs.remove(en);
         }
+    }
+
+    public void hitboxCollisionDetect() {
+
+    }
+
+    public void update() {
+        entityCollisionDetect();
     }
 
 }

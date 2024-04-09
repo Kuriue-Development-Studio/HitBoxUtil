@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec95c4f3-c066-4fe1-a96c-31e0974a0f55" name="Changes" comment="엔티티 충돌 기준 수정">
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/PolygonCollisionDetector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/element/Line.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/element/Triangle.java" afterDir="false" />
+    <list default="true" id="ec95c4f3-c066-4fe1-a96c-31e0974a0f55" name="Changes" comment="폴리곤 출돌감기기 만듦">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/CircleCollisionDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/CircleCollisionDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/CircleCollisionDetector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/CollisionDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/CollisionDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/PolygonCollisionDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/PolygonCollisionDetector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/hitbox/HitBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/hitbox/HitBox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +136,7 @@
       <workItem from="1712542993315" duration="28000" />
       <workItem from="1712543024362" duration="43000" />
       <workItem from="1712543069897" duration="444000" />
-      <workItem from="1712645843014" duration="10144000" />
+      <workItem from="1712645843014" duration="12058000" />
     </task>
     <task id="LOCAL-00001" summary="엔티티 충돌 감지">
       <option name="closed" value="true" />
@@ -155,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712646637588</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="폴리곤 출돌감기기 만듦">
+      <option name="closed" value="true" />
+      <created>1712657837567</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712657837567</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +174,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="엔티티 충돌 감지" />
     <MESSAGE value="엔티티 충돌 기준 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="엔티티 충돌 기준 수정" />
+    <MESSAGE value="폴리곤 출돌감기기 만듦" />
+    <option name="LAST_COMMIT_MESSAGE" value="폴리곤 출돌감기기 만듦" />
   </component>
 </project>

@@ -16,4 +16,16 @@ public class PolygonCollisionDetector extends CollisionDetector {
         }
         return false;
     }
+
+    @Override
+    public boolean isCollision(PolygonCollisionDetector collisionDetector) {
+        for(Triangle triangle : triangles) {
+            for(Triangle triangle1 : collisionDetector.triangles) {
+                if(triangle.isCollision(triangle1)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
