@@ -4,6 +4,7 @@ import org.bukkit.Chunk;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.Entity;
+import org.bukkit.entity.LivingEntity;
 import taewookim.collisiondetector.CollisionDetector;
 
 import java.util.ArrayList;
@@ -14,25 +15,28 @@ import java.util.List;
 public abstract class HitBox {
 
     private CollisionDetector[] collisiondetectors;
-    private Location mainloc;
-    private ArrayList<Entity> inhitboxs = new ArrayList<>();
+    private final World world;
+    private final int chunkx;
+    private final int chunkz;
+    private final LivingEntity owner;
+    private final ArrayList<Entity> inhitboxs = new ArrayList<>();
 
-    public HitBox(Location mainloc) {
-        this.mainloc = mainloc;
+    public HitBox(Location mainloc, LivingEntity owner) {
+        Chunk mainchunk = mainloc.getChunk();
+        world = mainloc.getWorld();
+        chunkx = mainchunk.getX();
+        chunkz = mainchunk.getZ();
+        this.owner = owner;
     }
 
     protected abstract void enterHitBox(Entity en);
     protected abstract void quitHitBox(Entity en);
 
     protected Chunk[] getRoundChunks() {
-        Chunk mainchunk = mainloc.getChunk();
-        World world = mainchunk.getWorld();
-        int mainx = mainchunk.getX();
-        int mainz = mainchunk.getZ();
         ArrayList<Chunk> chunks = new ArrayList<>(9);
         for(int i = -1; i<2; i++) {
             for(int j = -1; j<2; j++) {
-                Chunk chunk = world.getChunkAt(mainx+i, mainz+j);
+                Chunk chunk = world.getChunkAt(chunkx+i, chunkz+j);
                 if(chunk.isLoaded()) {
                     chunks.add(chunk);
                 }

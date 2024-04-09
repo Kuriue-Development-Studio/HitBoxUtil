@@ -5,10 +5,10 @@ import org.bukkit.entity.Entity;
 
 public class CircleCollisionDetector extends CollisionDetector {
 
-    final double x;
-    final double y;
-    final double z;
-    final double r2;
+    private final double x;
+    private final double y;
+    private final double z;
+    private final double r2;
 
     public CircleCollisionDetector(Location loc, double r) {
         x = loc.getX();
@@ -20,9 +20,9 @@ public class CircleCollisionDetector extends CollisionDetector {
     @Override
     public boolean isCollision(Entity en) {
         Location enloc = en.getLocation();
-        double dx = enloc.getX()+1.5-x;
+        double dx = enloc.getX()-x;
         double dy = enloc.getY()+1.5-y;
-        double dz = enloc.getZ()+1.5-z;
+        double dz = enloc.getZ()-z;
         return dx*dx+dy*dy+dz*dz<r2;
     }
 }

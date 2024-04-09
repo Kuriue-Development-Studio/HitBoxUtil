@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec95c4f3-c066-4fe1-a96c-31e0974a0f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/CircleCollisionDetector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/CollisionDetector.java" afterDir="false" />
+    <list default="true" id="ec95c4f3-c066-4fe1-a96c-31e0974a0f55" name="Changes" comment="엔티티 충돌 기준 수정">
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/PolygonCollisionDetector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/element/Line.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/element/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/CircleCollisionDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/CircleCollisionDetector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/hitbox/HitBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/hitbox/HitBox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +56,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -134,8 +137,25 @@
       <workItem from="1712542993315" duration="28000" />
       <workItem from="1712543024362" duration="43000" />
       <workItem from="1712543069897" duration="444000" />
-      <workItem from="1712645843014" duration="587000" />
+      <workItem from="1712645843014" duration="10144000" />
     </task>
+    <task id="LOCAL-00001" summary="엔티티 충돌 감지">
+      <option name="closed" value="true" />
+      <created>1712646438936</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712646438940</updated>
+    </task>
+    <task id="LOCAL-00002" summary="엔티티 충돌 기준 수정">
+      <option name="closed" value="true" />
+      <created>1712646637588</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712646637588</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,5 +163,10 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="java:org.spigotmc:spigot-api" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="엔티티 충돌 감지" />
+    <MESSAGE value="엔티티 충돌 기준 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="엔티티 충돌 기준 수정" />
   </component>
 </project>
