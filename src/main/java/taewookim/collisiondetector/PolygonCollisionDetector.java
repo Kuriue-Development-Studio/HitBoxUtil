@@ -5,7 +5,11 @@ import taewookim.collisiondetector.element.Triangle;
 
 public class PolygonCollisionDetector extends CollisionDetector {
 
-    private Triangle[] triangles;
+    private final Triangle[] triangles;
+
+    public PolygonCollisionDetector(Triangle[] triangles) {
+        this.triangles = triangles;
+    }
 
     @Override
     public boolean isCollision(Entity en) {
