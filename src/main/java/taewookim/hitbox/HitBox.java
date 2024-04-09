@@ -5,16 +5,18 @@ import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
+import taewookim.HitBoxPlugin;
 import taewookim.collisiondetector.CollisionDetector;
+import taewookim.collisiondetector.PolygonCollisionDetector;
+import util.Key;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 public abstract class HitBox {
 
-    private CollisionDetector[] collisiondetectors;
+    private PolygonCollisionDetector[] collisiondetectors;
+    private boolean isend = false;
+    private int tick = 0;
     private final World world;
     private final int chunkx;
     private final int chunkz;
@@ -31,6 +33,7 @@ public abstract class HitBox {
 
     protected abstract void enterHitBox(Entity en);
     protected abstract void quitHitBox(Entity en);
+    protected abstract void collisionHitBox(HitBox hitBox);
 
     protected Chunk[] getRoundChunks() {
         ArrayList<Chunk> chunks = new ArrayList<>(9);
@@ -49,10 +52,12 @@ public abstract class HitBox {
         ArrayList<Entity> inhitboxs = new ArrayList<>();
         for(Chunk chunk : getRoundChunks()) {
             for(Entity en : chunk.getEntities()) {
-                for(CollisionDetector detector : collisiondetectors) {
-                    if(detector.isCollision(en)) {
-                        inhitboxs.add(en);
-                        break;
+                if(!en.equals(owner)) {
+                    for(CollisionDetector detector : collisiondetectors) {
+                        if(detector.isCollision(en)) {
+                            inhitboxs.add(en);
+                            break;
+                        }
                     }
                 }
             }
@@ -70,12 +75,42 @@ public abstract class HitBox {
         }
     }
 
-    public void hitboxCollisionDetect() {
+    public boolean isHit(HitBox hitBox) {
+        for(PolygonCollisionDetector cd : collisiondetectors) {
+            for(PolygonCollisionDetector cd1 : hitBox.collisiondetectors) {
+                if(cd.isCollision(cd1)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 
+    public void hitboxCollisionDetect() {
+        Map<Key<Integer, Integer>, ArrayList<HitBox>> map = HitBoxPlugin.plugin.hitboxs;
+        for(Chunk ch : getRoundChunks()) {
+            ArrayList<HitBox> hitBoxes = map.get(ch);
+            if(hitBoxes!=null&&!hitBoxes.isEmpty()) {
+                for(HitBox hitBox : hitBoxes) {
+                    if(hitBox!=this&&isHit(hitBox)) {
+                        collisionHitBox(hitBox);
+                    }
+                }
+            }
+        }
+    }
+
+    public boolean isEnd() {
+        return isend;
     }
 
     public void update() {
         entityCollisionDetect();
+        hitboxCollisionDetect();
+        tick--;
+        if(tick<=0) {
+            isend = true;
+        }
     }
 
 }
