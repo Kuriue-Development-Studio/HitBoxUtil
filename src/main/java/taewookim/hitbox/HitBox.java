@@ -31,6 +31,18 @@ public abstract class HitBox {
         this.owner = owner;
     }
 
+    public Chunk getChunk() {
+        return world.getChunkAt(chunkx, chunkz);
+    }
+
+    public int getChunkX() {
+        return chunkx;
+    }
+
+    public int getChunkZ() {
+        return chunkz;
+    }
+
     protected abstract void enterHitBox(Entity en);
     protected abstract void quitHitBox(Entity en);
     protected abstract void collisionHitBox(HitBox hitBox);
@@ -88,12 +100,14 @@ public abstract class HitBox {
 
     public void hitboxCollisionDetect() {
         Map<Key<Integer, Integer>, ArrayList<HitBox>> map = HitBoxPlugin.plugin.hitboxs;
-        for(Chunk ch : getRoundChunks()) {
-            ArrayList<HitBox> hitBoxes = map.get(ch);
-            if(hitBoxes!=null&&!hitBoxes.isEmpty()) {
-                for(HitBox hitBox : hitBoxes) {
-                    if(hitBox!=this&&isHit(hitBox)) {
-                        collisionHitBox(hitBox);
+        for(int x = -1; x<2; x++) {
+            for(int z = -1; z<2; z++) {
+                ArrayList<HitBox> hitBoxes = map.get(new Key<>(chunkx+x, chunkz+z));
+                if(hitBoxes!=null&&!hitBoxes.isEmpty()) {
+                    for(HitBox hitBox : hitBoxes) {
+                        if(hitBox!=this&&isHit(hitBox)) {
+                            collisionHitBox(hitBox);
+                        }
                     }
                 }
             }
