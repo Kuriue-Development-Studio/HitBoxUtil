@@ -20,9 +20,9 @@ public class CircleCollisionDetector extends CollisionDetector {
     @Override
     public boolean isCollision(Entity en) {
         Location enloc = en.getLocation();
-        double dx = enloc.getX()-x;
-        double dy = enloc.getY()-y;
-        double dz = enloc.getZ()-z;
+        double dx = enloc.getX()+1.5-x;
+        double dy = enloc.getY()+1.5-y;
+        double dz = enloc.getZ()+1.5-z;
         return dx*dx+dy*dy+dz*dz<r2;
     }
 }
