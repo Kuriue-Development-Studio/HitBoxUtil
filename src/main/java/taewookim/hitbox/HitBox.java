@@ -14,6 +14,9 @@ import java.util.*;
 
 public abstract class HitBox {
 
+    public double hitX;
+    public double hitY;
+    public double hitZ;
     private PolygonCollisionDetector[] collisiondetectors;
     private boolean isend = false;
     private int tick = 0;
@@ -29,6 +32,13 @@ public abstract class HitBox {
         chunkx = mainchunk.getX();
         chunkz = mainchunk.getZ();
         this.owner = owner;
+    }
+
+    public void setCollisionDetectors(PolygonCollisionDetector[] detectors) {
+        this.collisiondetectors = detectors;
+        for(PolygonCollisionDetector detector : detectors) {
+            detector.hitbox = this;
+        }
     }
 
     public Chunk getChunk() {

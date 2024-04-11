@@ -2,13 +2,18 @@ package taewookim.collisiondetector;
 
 import org.bukkit.entity.Entity;
 import taewookim.collisiondetector.element.Triangle;
+import taewookim.hitbox.HitBox;
 
 public class PolygonCollisionDetector extends CollisionDetector {
 
     private final Triangle[] triangles;
+    public HitBox hitbox;
 
     public PolygonCollisionDetector(Triangle[] triangles) {
         this.triangles = triangles;
+        for(Triangle triangle : triangles) {
+            triangle.hitBox = hitbox;
+        }
     }
 
     @Override

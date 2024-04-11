@@ -39,6 +39,7 @@ public class HitBoxBuilder {
     public void build(Class<? extends HitBox> clz) {
         try{
             HitBox hitbox = clz.getDeclaredConstructor(Location.class, LivingEntity.class).newInstance(loc, owner);
+            hitbox.setCollisionDetectors(detectors.toArray(PolygonCollisionDetector[]::new));
             HitBoxPlugin.plugin.addHitBox(hitbox);
         }catch(Exception e) {
             e.printStackTrace();
