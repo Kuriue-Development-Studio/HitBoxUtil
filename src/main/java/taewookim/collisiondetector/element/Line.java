@@ -120,9 +120,6 @@ public class Line {
             hitbox.hitX = px;
             hitbox.hitY = py;
             hitbox.hitZ = pz;
-            triangle.hitBox.hitX = px;
-            triangle.hitBox.hitY = py;
-            triangle.hitBox.hitZ = pz;
         }
         return is;
     }

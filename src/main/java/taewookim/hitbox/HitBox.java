@@ -134,14 +134,20 @@ public abstract class HitBox {
     }
 
     public void update() {
-        entityCollisionDetect();
+        if(isend) {
+            return;
+        }
         hitboxCollisionDetect();
+        if(isend) {
+            return;
+        }
+        entityCollisionDetect();
+        if(isend) {
+            return;
+        }
         tick--;
         if(tick<=0) {
             isend = true;
-        }
-        for(PolygonCollisionDetector collisionDetector : collisiondetectors) {
-            collisionDetector.summonParticle();
         }
     }
 
