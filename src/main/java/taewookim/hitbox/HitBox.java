@@ -129,6 +129,10 @@ public abstract class HitBox {
         }
     }
 
+    public void setEnd() {
+        isend = true;
+    }
+
     public boolean isEnd() {
         return isend;
     }
