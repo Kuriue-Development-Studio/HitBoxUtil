@@ -38,6 +38,12 @@ public abstract class HitBox {
         tick = i;
     }
 
+    public void summonParticle() {
+        for(PolygonCollisionDetector detector : collisiondetectors) {
+            detector.summonParticle();
+        }
+    }
+
     public void setCollisionDetectors(PolygonCollisionDetector[] detectors) {
         this.collisiondetectors = detectors;
         for(PolygonCollisionDetector detector : detectors) {
