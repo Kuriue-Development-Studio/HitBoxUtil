@@ -60,7 +60,7 @@ public class Line {
         if(b<0.0001) {
             return -1;
         }
-        return ((x-this.x)*dx+(y-this.y)*dy+(z-this.z*dz))/b;
+        return ((x-this.x)*dx+(y-this.y)*dy+(z-this.z)*dz)/b;
     }
 
     public double sign(double x1, double y1,
