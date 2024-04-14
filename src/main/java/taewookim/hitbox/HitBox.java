@@ -136,6 +136,9 @@ public abstract class HitBox {
         if(tick<=0) {
             isend = true;
         }
+        for(PolygonCollisionDetector collisionDetector : collisiondetectors) {
+            collisionDetector.summonParticle();
+        }
     }
 
 }
