@@ -62,5 +62,6 @@ public class HitBoxPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
         plugin = this;
+        Update();
     }
 }
