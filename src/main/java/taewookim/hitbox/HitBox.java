@@ -37,7 +37,7 @@ public abstract class HitBox {
     public void setCollisionDetectors(PolygonCollisionDetector[] detectors) {
         this.collisiondetectors = detectors;
         for(PolygonCollisionDetector detector : detectors) {
-            detector.hitbox = this;
+            detector.setHitbox(this);
         }
     }
 

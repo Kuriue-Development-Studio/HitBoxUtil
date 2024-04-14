@@ -32,6 +32,17 @@ public class Triangle {
                 , p2[3], p2[4], p2[5]};
     }
 
+    public void setHitBox(HitBox hitBox) {
+        this.hitBox = hitBox;
+        line1.hitbox = hitBox;
+        line2.hitbox = hitBox;
+    }
+
+    public void summonParticle() {
+        line1.sumonparticle();
+        line2.sumonparticle();
+    }
+
     public double[] getCrossproduct() {
         return crossproduct;
     }

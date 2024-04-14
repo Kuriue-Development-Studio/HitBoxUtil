@@ -16,6 +16,19 @@ public class PolygonCollisionDetector extends CollisionDetector {
         }
     }
 
+    public void setHitbox(HitBox hitbox) {
+        this.hitbox = hitbox;
+        for(Triangle triangle : triangles) {
+            triangle.setHitBox(hitbox);
+        }
+    }
+
+    public void summonParticle() {
+        for(Triangle triangle : triangles) {
+            triangle.summonParticle();
+        }
+    }
+
     @Override
     public boolean isCollision(Entity en) {
         for(Triangle triangle : triangles) {
