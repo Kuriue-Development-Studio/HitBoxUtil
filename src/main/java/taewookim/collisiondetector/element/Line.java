@@ -27,7 +27,7 @@ public class Line {
 
     public void sumonparticle() {
         for(float f = 0; f<1; f+=0.1) {
-            hitbox.getChunk().getWorld().spawnParticle(Particle.REDSTONE, x+dx*f, y+dy*f, z+dz*f, 0, 0, 0, 0, 0, new Particle.DustOptions(Color.AQUA, 0.1f));
+            hitbox.getChunk().getWorld().spawnParticle(Particle.REDSTONE, x+dx*f, y+dy*f, z+dz*f, 0, 0, 0, 0, 0, new Particle.DustOptions(Color.AQUA, 1));
         }
     }
 
