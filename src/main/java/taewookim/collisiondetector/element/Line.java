@@ -1,6 +1,7 @@
 package taewookim.collisiondetector.element;
 
 import org.bukkit.Location;
+import org.bukkit.Particle;
 import org.bukkit.entity.Entity;
 import taewookim.hitbox.HitBox;
 
@@ -21,6 +22,8 @@ public class Line {
         this.dx = x2-x1;
         this.dy = y2-y1;
         this.dz = z2-z1;
+        hitbox.getChunk().getWorld().spawnParticle(Particle.CLOUD, x1, y1, z1, 0, 0, 0, 0, 0);
+        hitbox.getChunk().getWorld().spawnParticle(Particle.CLOUD, x2, y2, z2, 0, 0, 0, 0, 0);
     }
 
     public boolean isHitEntity(Entity entity) {

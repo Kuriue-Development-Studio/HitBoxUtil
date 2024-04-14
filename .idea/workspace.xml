@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec95c4f3-c066-4fe1-a96c-31e0974a0f55" name="Changes" comment="README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/HitBoxPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/HitBoxPlugin.java" afterDir="false" />
-    </list>
+    <list default="true" id="ec95c4f3-c066-4fe1-a96c-31e0974a0f55" name="Changes" comment="업데이트 함수 넣는거 빼먹음" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +99,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Minecraft_HitboxUtile [publishAllPublicationsToMavenRepository]">
+  <component name="RunManager" selected="Gradle.Minecraft_HitboxUtile [build]">
     <configuration name="Minecraft_HitboxUtile [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -195,9 +192,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Minecraft_HitboxUtile [build]" />
         <item itemvalue="Gradle.Minecraft_HitboxUtile [publishAllPublicationsToMavenRepository]" />
         <item itemvalue="Gradle.Minecraft_HitboxUtile [publish]" />
-        <item itemvalue="Gradle.Minecraft_HitboxUtile [build]" />
         <item itemvalue="Gradle.Test.TestPolygon" />
       </list>
     </recent_temporary>
@@ -226,7 +223,7 @@
       <workItem from="1712818852409" duration="117000" />
       <workItem from="1712819509631" duration="19000" />
       <workItem from="1712819901070" duration="1262000" />
-      <workItem from="1713097418950" duration="2206000" />
+      <workItem from="1713097418950" duration="2391000" />
     </task>
     <task id="LOCAL-00001" summary="엔티티 충돌 감지">
       <option name="closed" value="true" />
@@ -300,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712667819601</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="업데이트 함수 넣는거 빼먹음">
+      <option name="closed" value="true" />
+      <created>1713099707907</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713099707907</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +324,7 @@
     <MESSAGE value="폴리곤 충돌 감지기 빌더" />
     <MESSAGE value="히트박스 빌더" />
     <MESSAGE value="README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
+    <MESSAGE value="업데이트 함수 넣는거 빼먹음" />
+    <option name="LAST_COMMIT_MESSAGE" value="업데이트 함수 넣는거 빼먹음" />
   </component>
 </project>
