@@ -88,7 +88,10 @@ public class Line {
         double py = y+u*dy;
         double pz = z+u*dz;
         boolean is = false;
-        if(tcp[0]>tcp[1]) {
+        is = PointInTriangle(py, pz, points[1], points[2],
+                points[4], points[5],
+                points[7], points[8]);
+        /*if(tcp[0]>tcp[1]) {
             if(tcp[0]>tcp[2]) {
                 //x가 큼
                 is = PointInTriangle(py, pz, points[1], points[2],
@@ -112,7 +115,7 @@ public class Line {
                         points[3], points[4],
                         points[6], points[7]);
             }
-        }
+        }*/
         if(is) {
             hitbox.hitX = px;
             hitbox.hitY = py;
