@@ -34,7 +34,7 @@ public class Line {
     public boolean isHitEntity(Entity entity) {
         Location loc = entity.getLocation();
         double u = getU(loc.getX(), loc.getY(), loc.getZ(), dx, dy, dz);
-        if(u<0||u>1) {
+        if(u<=0||u>=1) {
             return false;
         }
         double pdx = loc.getX()-x+u*dx;
@@ -57,9 +57,6 @@ public class Line {
 
     public double getU(double x, double y, double z, double dx, double dy, double dz) {
         double b = this.dx*dx+this.dy*dy+this.dz*dz;
-        if(b<0.0001) {
-            return -1;
-        }
         return ((x-this.x)*dx+(y-this.y)*dy+(z-this.z)*dz)/b;
     }
 
@@ -83,7 +80,7 @@ public class Line {
         double[] tmp = triangle.getMainPoint();
         double[] tcp = triangle.getCrossproduct();
         double u = getU(tmp[0], tmp[1], tmp[2], tcp[0], tcp[1], tcp[2]);
-        if(u>=0&&u<=1) {
+        if(u<=0||u>=1) {
             return false;
         }
         double[] points = triangle.getPoints();
