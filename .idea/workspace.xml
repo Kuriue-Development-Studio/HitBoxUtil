@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec95c4f3-c066-4fe1-a96c-31e0974a0f55" name="Changes" comment="업데이트 함수 넣는거 빼먹음" />
+    <list default="true" id="ec95c4f3-c066-4fe1-a96c-31e0974a0f55" name="Changes" comment="where are you">
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/PolygonCollisionDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/PolygonCollisionDetector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/element/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/element/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/element/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/element/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/hitbox/HitBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/hitbox/HitBox.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,6 +229,7 @@
       <workItem from="1712819509631" duration="19000" />
       <workItem from="1712819901070" duration="1262000" />
       <workItem from="1713097418950" duration="2391000" />
+      <workItem from="1713100211664" duration="457000" />
     </task>
     <task id="LOCAL-00001" summary="엔티티 충돌 감지">
       <option name="closed" value="true" />
@@ -305,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713099707907</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="where are you">
+      <option name="closed" value="true" />
+      <created>1713100291926</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713100291926</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +339,7 @@
     <MESSAGE value="히트박스 빌더" />
     <MESSAGE value="README.md" />
     <MESSAGE value="업데이트 함수 넣는거 빼먹음" />
-    <option name="LAST_COMMIT_MESSAGE" value="업데이트 함수 넣는거 빼먹음" />
+    <MESSAGE value="where are you" />
+    <option name="LAST_COMMIT_MESSAGE" value="where are you" />
   </component>
 </project>
