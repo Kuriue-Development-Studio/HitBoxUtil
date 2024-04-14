@@ -31,6 +31,7 @@ public class Line {
 
     public boolean isHitEntity(Entity entity) {
         Location loc = entity.getLocation();
+        System.out.println(entity);
         double u = getU(loc.getX(), loc.getY(), loc.getZ(), dx, dy, dz);
         if(u<0||u>1) {
             return false;
