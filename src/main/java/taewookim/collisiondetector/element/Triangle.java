@@ -15,7 +15,7 @@ public class Triangle {
                     double x2, double y2, double z2,
                     double x3, double y3, double z3) {
         line1 = new Line(x1, y1, z1, x2, y2, z2);
-        line2 = new Line(x1, y2, z1, x3, y3, z3);
+        line2 = new Line(x1, y1, z1, x3, y3, z3);
         line1.hitbox = hitBox;
         line2.hitbox = hitBox;
         crossproduct = line1.getCrossProduct(line2);

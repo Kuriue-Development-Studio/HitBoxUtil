@@ -138,7 +138,6 @@ public abstract class HitBox {
         hitboxCollisionDetect();
         tick--;
         if(tick<=0) {
-            System.out.println("a");
             isend = true;
         }
         for(PolygonCollisionDetector collisionDetector : collisiondetectors) {
