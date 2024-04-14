@@ -56,7 +56,7 @@ public class Line {
     }
 
     public double getU(double x, double y, double z, double dx, double dy, double dz) {
-        double b = Math.abs(this.dx*dx+this.dy*dy+this.dz*dz);
+        double b = this.dx*dx+this.dy*dy+this.dz*dz;
         if(b<0.0001) {
             return -1;
         }
