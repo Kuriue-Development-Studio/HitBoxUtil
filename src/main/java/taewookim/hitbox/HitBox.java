@@ -34,6 +34,10 @@ public abstract class HitBox {
         this.owner = owner;
     }
 
+    public void setTick(int i) {
+        tick = i;
+    }
+
     public void setCollisionDetectors(PolygonCollisionDetector[] detectors) {
         this.collisiondetectors = detectors;
         for(PolygonCollisionDetector detector : detectors) {
@@ -134,6 +138,7 @@ public abstract class HitBox {
         hitboxCollisionDetect();
         tick--;
         if(tick<=0) {
+            System.out.println("a");
             isend = true;
         }
         for(PolygonCollisionDetector collisionDetector : collisiondetectors) {

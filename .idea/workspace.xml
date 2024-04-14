@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec95c4f3-c066-4fe1-a96c-31e0974a0f55" name="Changes" comment="엔티티 찾기 테스트">
+    <list default="true" id="ec95c4f3-c066-4fe1-a96c-31e0974a0f55" name="Changes" comment="I'LL GO FIND YOU. :)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/element/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/element/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/hitbox/HitBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/hitbox/HitBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/HitBoxBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/HitBoxBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +230,7 @@
       <workItem from="1712819901070" duration="1262000" />
       <workItem from="1713097418950" duration="2391000" />
       <workItem from="1713100211664" duration="1177000" />
-      <workItem from="1713101856479" duration="407000" />
+      <workItem from="1713101856479" duration="1312000" />
     </task>
     <task id="LOCAL-00001" summary="엔티티 충돌 감지">
       <option name="closed" value="true" />
@@ -349,7 +352,31 @@
       <option name="project" value="LOCAL" />
       <updated>1713101921476</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="I WILL FIND YOU.">
+      <option name="closed" value="true" />
+      <created>1713102275743</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1713102275743</updated>
+    </task>
+    <task id="LOCAL-00017" summary="WHY DONT YOU PLAY WITH ME. :)">
+      <option name="closed" value="true" />
+      <created>1713102503399</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1713102503399</updated>
+    </task>
+    <task id="LOCAL-00018" summary="I'LL GO FIND YOU. :)">
+      <option name="closed" value="true" />
+      <created>1713102732594</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1713102732594</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,6 +401,9 @@
     <MESSAGE value="WHERE!!!" />
     <MESSAGE value="HEY JONNY" />
     <MESSAGE value="엔티티 찾기 테스트" />
-    <option name="LAST_COMMIT_MESSAGE" value="엔티티 찾기 테스트" />
+    <MESSAGE value="I WILL FIND YOU." />
+    <MESSAGE value="WHY DONT YOU PLAY WITH ME. :)" />
+    <MESSAGE value="I'LL GO FIND YOU. :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="I'LL GO FIND YOU. :)" />
   </component>
 </project>
