@@ -1,5 +1,6 @@
 package taewookim.collisiondetector.element;
 
+import org.bukkit.Color;
 import org.bukkit.Location;
 import org.bukkit.Particle;
 import org.bukkit.entity.Entity;
@@ -25,8 +26,9 @@ public class Line {
     }
 
     public void sumonparticle() {
-        hitbox.getChunk().getWorld().spawnParticle(Particle.CLOUD, x, y, z, 0, 0, 0, 0, 0);
-        hitbox.getChunk().getWorld().spawnParticle(Particle.CLOUD, x+dx, y+dy, z+dz, 0, 0, 0, 0, 0);
+        for(float f = 0; f<1; f+=0.1) {
+            hitbox.getChunk().getWorld().spawnParticle(Particle.REDSTONE, x+dx*f, y+dy*f, z+dz*f, 0, 0, 0, 0, 0, new Particle.DustOptions(Color.AQUA, 0.1f));
+        }
     }
 
     public boolean isHitEntity(Entity entity) {
