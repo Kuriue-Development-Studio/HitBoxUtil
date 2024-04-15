@@ -48,7 +48,6 @@ public abstract class HitBox {
         this.collisiondetectors = detectors;
         for(PolygonCollisionDetector detector : detectors) {
             detector.setHitbox(this);
-            detector.summonParticle();
         }
     }
 

@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec95c4f3-c066-4fe1-a96c-31e0974a0f55" name="Changes" comment="getU() 에서 절댓값 제거">
-      <change beforePath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/element/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/taewookim/collisiondetector/element/Line.java" afterDir="false" />
+    <list default="true" id="ec95c4f3-c066-4fe1-a96c-31e0974a0f55" name="Changes" comment="제발 좀 돼라">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +227,8 @@
       <workItem from="1712819901070" duration="1262000" />
       <workItem from="1713097418950" duration="2391000" />
       <workItem from="1713100211664" duration="1177000" />
-      <workItem from="1713101856479" duration="5966000" />
+      <workItem from="1713101856479" duration="7287000" />
+      <workItem from="1713174372830" duration="141000" />
     </task>
     <task id="LOCAL-00001" summary="엔티티 충돌 감지">
       <option name="closed" value="true" />
@@ -429,7 +430,31 @@
       <option name="project" value="LOCAL" />
       <updated>1713107652053</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="삼각형 충돌감지할때 u범위 재정의">
+      <option name="closed" value="true" />
+      <created>1713108074920</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1713108074920</updated>
+    </task>
+    <task id="LOCAL-00027" summary="WHAT IS &quot;U&quot;?">
+      <option name="closed" value="true" />
+      <created>1713108306674</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1713108306674</updated>
+    </task>
+    <task id="LOCAL-00028" summary="제발 좀 돼라">
+      <option name="closed" value="true" />
+      <created>1713108761945</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1713108761945</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,9 +464,6 @@
     <option featureType="dependencySupport" implementationName="java:org.spigotmc:spigot-api" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="엔티티 충돌 감지" />
-    <MESSAGE value="엔티티 충돌 기준 수정" />
-    <MESSAGE value="폴리곤 출돌감기기 만듦" />
     <MESSAGE value="원 충돌기 제거 (사유: 만들기 귀찮음)" />
     <MESSAGE value="히트박스 끼리의 충돌감지" />
     <MESSAGE value="히트박스 구현" />
@@ -464,6 +486,9 @@
     <MESSAGE value="명령어 하나로 히트박스를 죽일 수 있습니다." />
     <MESSAGE value="유연하게" />
     <MESSAGE value="getU() 에서 절댓값 제거" />
-    <option name="LAST_COMMIT_MESSAGE" value="getU() 에서 절댓값 제거" />
+    <MESSAGE value="삼각형 충돌감지할때 u범위 재정의" />
+    <MESSAGE value="WHAT IS &quot;U&quot;?" />
+    <MESSAGE value="제발 좀 돼라" />
+    <option name="LAST_COMMIT_MESSAGE" value="제발 좀 돼라" />
   </component>
 </project>
