@@ -48,7 +48,8 @@ public class Triangle {
     }
 
     public boolean isCollision(Triangle triangle) {
-        return line1.isCrossWithTriangle(triangle)||line2.isCrossWithTriangle(triangle);
+        return line1.isCrossWithTriangle(triangle)||line2.isCrossWithTriangle(triangle)
+                ||triangle.line1.isCrossWithTriangle(this)||triangle.line2.isCrossWithTriangle(this);
     }
 
     public boolean isHit(Entity entity) {
