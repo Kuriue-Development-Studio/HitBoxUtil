@@ -63,6 +63,10 @@ public abstract class HitBox {
         return chunkz;
     }
 
+    public LivingEntity getOwner() {
+        return owner;
+    }
+
     protected abstract void enterHitBox(Entity en);
     protected abstract void quitHitBox(Entity en);
     protected abstract void collisionHitBox(HitBox hitBox);

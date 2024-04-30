@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec95c4f3-c066-4fe1-a96c-31e0974a0f55" name="Changes" comment="제발 좀 돼라">
+    <list default="true" id="ec95c4f3-c066-4fe1-a96c-31e0974a0f55" name="Changes" comment="안되는 경우 일부 포함">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,6 +229,7 @@
       <workItem from="1713100211664" duration="1177000" />
       <workItem from="1713101856479" duration="7287000" />
       <workItem from="1713174372830" duration="141000" />
+      <workItem from="1713270686821" duration="1175000" />
     </task>
     <task id="LOCAL-00001" summary="엔티티 충돌 감지">
       <option name="closed" value="true" />
@@ -454,7 +455,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713108761945</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="안되는 경우 일부 포함">
+      <option name="closed" value="true" />
+      <created>1713271288836</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1713271288836</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +473,6 @@
     <option featureType="dependencySupport" implementationName="java:org.spigotmc:spigot-api" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="원 충돌기 제거 (사유: 만들기 귀찮음)" />
     <MESSAGE value="히트박스 끼리의 충돌감지" />
     <MESSAGE value="히트박스 구현" />
     <MESSAGE value="폴리곤 충돌 감지기 빌더" />
@@ -489,6 +497,7 @@
     <MESSAGE value="삼각형 충돌감지할때 u범위 재정의" />
     <MESSAGE value="WHAT IS &quot;U&quot;?" />
     <MESSAGE value="제발 좀 돼라" />
-    <option name="LAST_COMMIT_MESSAGE" value="제발 좀 돼라" />
+    <MESSAGE value="안되는 경우 일부 포함" />
+    <option name="LAST_COMMIT_MESSAGE" value="안되는 경우 일부 포함" />
   </component>
 </project>
