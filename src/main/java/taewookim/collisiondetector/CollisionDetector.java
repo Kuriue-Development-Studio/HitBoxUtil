@@ -8,4 +8,6 @@ public abstract class CollisionDetector {
 
     public abstract boolean isCollisionPolygon(PolygonCollisionDetector collisionDetector);
 
+    public abstract void moveCollision(double dx, double dy, double dz);
+
 }

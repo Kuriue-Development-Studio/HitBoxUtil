@@ -50,4 +50,11 @@ public class PolygonCollisionDetector extends CollisionDetector {
         }
         return false;
     }
+
+    @Override
+    public void moveCollision(double dx, double dy, double dz) {
+        for(Triangle triangle : triangles) {
+            triangle.moveTriangle(dx, dy, dz);
+        }
+    }
 }

@@ -21,17 +21,39 @@ public abstract class HitBox {
     private boolean isend = false;
     private int tick = 0;
     private final World world;
-    private final int chunkx;
-    private final int chunkz;
+    private double mainx;
+    private double mainy;
+    private double mainz;
+    private int chunkx;
+    private int chunkz;
     private final LivingEntity owner;
     private final ArrayList<Entity> inhitboxs = new ArrayList<>();
 
     public HitBox(Location mainloc, LivingEntity owner) {
         Chunk mainchunk = mainloc.getChunk();
         world = mainloc.getWorld();
+        mainx = mainloc.getX();
+        mainy = mainloc.getY();
+        mainz = mainloc.getZ();
         chunkx = mainchunk.getX();
         chunkz = mainchunk.getZ();
         this.owner = owner;
+    }
+
+    public void moveToHitBox(double x, double y, double z) {
+        moveHitBox(x-mainx, y-mainy, z-mainz);
+    }
+
+    public void moveHitBox(double dx, double dy, double dz) {
+        mainx+=dx;
+        mainy+=dy;
+        mainz+=dz;
+        Chunk ch = world.getChunkAt(new Location(world, mainx, mainy, mainz));
+        chunkx = ch.getX();
+        chunkz = ch.getZ();
+        for(PolygonCollisionDetector detector : collisiondetectors) {
+            detector.moveCollision(dx, dy, dz);
+        }
     }
 
     public void setTick(int i) {

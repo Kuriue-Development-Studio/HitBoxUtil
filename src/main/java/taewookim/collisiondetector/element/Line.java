@@ -8,9 +8,9 @@ import taewookim.hitbox.HitBox;
 
 public class Line {
 
-    private final double x;
-    private final double y;
-    private final double z;
+    private double x;
+    private double y;
+    private double z;
     private final double dx;
     private final double dy;
     private final double dz;
@@ -23,6 +23,12 @@ public class Line {
         this.dx = x2-x1;
         this.dy = y2-y1;
         this.dz = z2-z1;
+    }
+
+    public void moveLine(double dx, double dy, double dz) {
+        x+=dx;
+        y+=dy;
+        z+=dz;
     }
 
     public void sumonparticle() {

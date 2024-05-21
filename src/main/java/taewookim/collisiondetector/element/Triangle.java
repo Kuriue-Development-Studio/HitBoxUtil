@@ -21,6 +21,11 @@ public class Triangle {
         crossproduct = line1.getCrossProduct(line2);
     }
 
+    public void moveTriangle(double dx, double dy, double dz) {
+        line1.moveLine(dx, dy, dz);
+        line2.moveLine(dx, dy, dz);
+    }
+
     public double[] getMainPoint() {
         return line1.getMainPoint();
     }
